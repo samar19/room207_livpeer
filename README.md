@@ -1,14 +1,22 @@
-# ✨Dappstar ✨
+# ✨Room207 ✨
 
-https://dorahacks.io/buidl/3553
 Ethereum · Arweave
 
 _Decentralized, temporary & secure access to your favourite content!_
 - - -
 Before we start, if you are the judge/panelist for , here are important quick links:
-1. Live Project: https://dappstar.vercel.app/
-2. Demo: https://youtu.be/jwnS7M9jhys
-3. How to interact with the live project: https://github.com/ankitshubham97/dappstar#interacting-with-the-live-project
+1. Live Project: 
+2. Demo: 
+3. How to interact with the live project: https://github.com/samar19/room207_livpeer
+
+
+## project Description 
+
+Room207 is a decentralized content sharing platform for creators. It allows creators to store encrypted content on IPFS and give access to their content through the use of token-gated NFTs. The platform has two types of NFTs: Long-NFTs, which give permanent access to the creator's content, and Quick-NFTs, which provide temporary access. Quick-NFTs are made possible through the use of Arweave's Arseeding feature.
+
+On the platform, creators can manage their content, view their revenue from NFT sales and tips, and sign in with their wallet. Fans can connect their wallet to the platform, mint Quick-NFTs to gain temporary access to the creator's content, and pay a minting fee to the creator.
+
+Overall, Room207 aims to provide creators with a decentralized and secure platform for sharing their content, while also giving fans the option for temporary access through the use of Quick-NFTs.
 
 - - -
 # Problems with the current state of creator economy?
@@ -21,22 +29,19 @@ It is not new to hear of news that due to certain vulnerabilities in the central
 ## No provision of temporary access (we will solve this with Arseeding!)
 Its common that there is a person who is not financially strong enough to pay for expensive subscriptions. Also, they need it only for a brief period of time and not necessarily throughout year; maybe because they are not able to dedicate a daily time to watching the content. But they want to watch it on a Sunday. There are no solutions that enables him to get this 'temporary access'.
 - - -
-# Solution: Enters Dappstar 😎
-Dappstar is a decentralized-yet-private content sharing platform for creators where they can:
+# Solution: Enters Room207 😎
+Room207 is a decentralized-yet-private content sharing platform for creators where they can:
 
 - Store by-default-encrypted content on IPFS(so zero dependency on centralized system and protection of their data)
 - Token-gate their content; so only that fan who possesses a certain NFT (call this 'Long-NFT') can access the content forever.
 - Feature of [Quick-NFTs][quick-nft] (Quick-NFTs are special NFTs that is designed as part of this project which provides its holder a temporary access to the creator's private content. **Quick-NFTs are made possible by Arseeding & we will focus on Quick-NFTs for this hackathon ❤️**)
 - - -
-# Dappstar walkthrough
-The app is live at https://dappstar.vercel.app/ and here is the [demo video][demo]. Let's break down the walkthrough into 2 segments:
-- Creator's perspective
-- Fan's perspective
+
 
 For this hackathon, our focus is on [Quick-NFTs][quick-nft] and how arseeding and web3infra helped in their implementation. Feel free to skip to [Quick-NFTs][quick-nft] section.
 
 ## Creator's perspective.
-Let's assume that Taylor is the creator. For the sake of this hackathon, let's assume that there is only one creator on the Dappstar's platform. Also, her wallet address is 0x4ad53d31Cb104Cf5f7622f1AF8Ed09C3ca980523 and she created an NFT smart contract via this wallet and is currently deployed on [Coinex testnet][chain] at the address [0x476eaA416e7f2DaE54600d86c657c41F4081Ff9C][nft-contract-address]. The NFT contract enables others to mint a token for themselves by paying certain amount in [CET][CET]. This amount flows back to her wallet address. And the holders of the NFT could get access to her content (whether the access is permanent or temporary depends on if the NFT minted was a Long-NFT or a Quick-NFT; we will focus on Quick-NFTs for this hackathon)!
+Let's assume that Taylor is the creator. For the sake of this hackathon, let's assume that there is only one creator on the Room207's platform. Also, her wallet address is 0x4ad53d31Cb104Cf5f7622f1AF8Ed09C3ca980523 and she created an NFT smart contract via this wallet and is currently deployed on [Coinex testnet][chain] at the address [0x476eaA416e7f2DaE54600d86c657c41F4081Ff9C][nft-contract-address]. The NFT contract enables others to mint a token for themselves by paying certain amount in [CET][CET]. This amount flows back to her wallet address. And the holders of the NFT could get access to her content (whether the access is permanent or temporary depends on if the NFT minted was a Long-NFT or a Quick-NFT; we will focus on Quick-NFTs for this hackathon)!
 When she signs in with her wallet, she can:
 1. view her content
 2. manage(add/delete) her content
@@ -45,7 +50,7 @@ a. others minting her NFTs.
 b. others tipping/donating her.
 
 ## Fan's perspective
-Let's assume Ankit is a fan of Taylor. But he cannot afford to mint one of her Long-NFTs and also, he only wants a temporary access to her content on the upcoming Sunday. So, he goes for minting her Quick-NFT. How? He just goes to the platform at https://dappstar.vercel.app/, connects his wallet and then since he does not own any of her NFTs, he sees an option to mint. He mints, pays the fee and reconnects his wallet. Voila! He is able to see her content. Also, since its a Quick-NFT, he would lose access after 24 hours.
+Let's assume Ankit is a fan of Taylor. But he cannot afford to mint one of her Long-NFTs and also, he only wants a temporary access to her content on the upcoming Sunday. So, he goes for minting her Quick-NFT. How? He just goes to the platform at connects his wallet and then since he does not own any of her NFTs, he sees an option to mint. He mints, pays the fee and reconnects his wallet. Voila! He is able to see her content. Also, since its a Quick-NFT, he would lose access after 24 hours.
 - - -
 # Quick-NFTs
 Quick-NFTs are ERC-721 tokens which have the following additional features:
@@ -59,12 +64,12 @@ Let's understand how Arseeding is helping to create the Quick-NFTs. There is a f
 ```
 If you use the Arseeding service provided by web3infra, you need to pay for the response order, otherwise the data will clear after 24 hours.
 ```
-**We are using this limitation to create a real-life use case of providing temporary access!** From a very high level, whenever a Quick-NFT is minted, Dappstar also creates a file called ttlFile and uploads on web3infra without paying. Whenever the client tries to access any protected resource (i.e. the private content), Dappstar checks if the ttlFile was created by the back end and if it still exists. If it does, it means that the access could be given otherwise it is denied!
+**We are using this limitation to create a real-life use case of providing temporary access!** From a very high level, whenever a Quick-NFT is minted, Room207 also creates a file called ttlFile and uploads on web3infra without paying. Whenever the client tries to access any protected resource (i.e. the private content), Room207 checks if the ttlFile was created by the back end and if it still exists. If it does, it means that the access could be given otherwise it is denied!
 
 ## Engineering the decentralized temporary access with Arseeding
 Let's try to understand how it all works by going through the journey!
 1. A fan initiates the journey by minting a Quick-NFT.
-2. The client (Dappstar's front end), before initiating the mint call to the NFT smart contract, calls Dappstar's back end to get token-uri (it is for storing NFT metadata like title, NFT's image URI etc; can be ignored for now).
+2. The client (Room207's front end), before initiating the mint call to the NFT smart contract, calls Room207's back end to get token-uri (it is for storing NFT metadata like title, NFT's image URI etc; can be ignored for now).
 3. Back end, while generating the token-uri, also creates the ttlFile and uploads on web3infra without payment; it uses `createAndSubmitItem` method of `arseeding-js` SDK to do so.
 4. Back end responds with the token-uri and ttlFileUri; ttlFileUri is the URI of the ttlFile that is uploaded on the web3infra.
 5. Client saves the ttlFileUri in browser's local storage.
@@ -90,7 +95,7 @@ The duplicate ttlFile's uri will be sent along with other parameters to get the 
 
 - - -
 # Interacting with the live project
-The project is running live on https://dappstar.vercel.app/
+
 [The smart contract is deployed on Coinex testnet.][nft-contract-address]
 
 ## Coinex testnet network details (for metamask):
@@ -133,8 +138,4 @@ You could also check out these:
 # Future
 I believe temporary access is one of the major pain points of the consumers of the creator economy(CE); especially in the regions with relatively lower-than-average per-capita-income. Temporary access can bring more consumers to the CE. This would undoubtedly benefit the producers of the CE as well as play a crucial role in uplifting the quality of life of the new consumers.
 
-[chain]: <https://testnet.coinex.net/>
-[nft-contract-address]: <https://testnet.coinex.net/address/0x476eaA416e7f2DaE54600d86c657c41F4081Ff9C>
-[CET]: <https://www.coinex.com/token>
-[demo]: <https://youtu.be/jwnS7M9jhys>
-[quick-nft]: <https://github.com/ankitshubham97/dappstar#quick-nfts>
+
