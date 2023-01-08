@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  width:100%;
+  height:100%;
+  background: rgb(255,148,148);
+}
+
+.navbar {
+  @apply flex items-center justify-between w-full fixed top-0 z-10 h-[7rem] p-[3.5rem] bg-[#FFE3E1]/[0.99]
+}
+
+.navbar-fixed {
+  @apply fixed
+}
+
+.navbar-sticky {
+  @apply sticky
+}
+
+.navLink {
+  @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-[#FFD1D1]/[0.90]
+}
+
+.navLink-hover {
+  @apply hover:bg-[#FFD1D1] hover:bg-opacity-10 transition-all duration-500
+}
+
+.showcase {
+  @apply mt-[8rem] mx-[20%]
+}
+
+.car_container {
+  @apply pb-[19rem] pt-[9rem] px-[2rem] w-full h-screen
+}
+
+.car_section {
+  @apply w-full h-full pb-[1rem]
+}
+
+.car_image {
+  @apply w-full h-full object-contain
+}
+
+.car_buttons {
+  @apply absolute top-[95%] left-[80%]
+}
+
+.resource_title {
+  @apply text-6xl font-semibold text-[#181b21] py-[1rem]
+}
