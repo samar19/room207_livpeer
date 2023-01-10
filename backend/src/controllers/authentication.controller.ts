@@ -78,7 +78,7 @@ class AuthenticationController implements Controller {
     _: express.Request,
     response: express.Response,
   ): Promise<void> => {
-    response.send(`Welcome to the Dappstar backend server! Directly calling me isn't fun; so head to https://dappstar.vercel.app/ to explore more 🚀`);
+    response.send(`Welcome to the Room207 backend server! Directly calling me isn't fun; so head to https://room-207.vercel.app/ to explore more 🚀`);
   }
 
   private getAccessToken = async (
