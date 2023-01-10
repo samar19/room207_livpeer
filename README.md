@@ -2,13 +2,20 @@
 
 Ethereum · Arweave
 
-_Decentralized, temporary & secure access to your favourite content!_
-- - -
-Before we start, if you are the judge/panelist for , here are important quick links:
+## Before we start, if you are the judge/panelist for , here are important quick links:
+
 1. Live Project: 
 2. Demo: 
-3. How to interact with the live project: https://github.com/samar19/room207_livpeer
+3. How to interact with the live project: 
 
+## Livepeer: Best Design
+4. Figma : 
+
+##  presentation 
+5. presentation : https://www.canva.com/design/DAFXHUW99Js/hZAPU4rLP5Qg8zmeR_o8IQ/watch?utm_content=DAFXHUW99Js&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+## github Repo
+6. github repo : https://github.com/samar19/room207_livpeer
 
 ## project Description 
 
@@ -36,8 +43,6 @@ Room207 is a decentralized-yet-private content sharing platform for creators whe
 - Token-gate their content; so only that fan who possesses a certain NFT (call this 'Long-NFT') can access the content forever.
 - Feature of [Quick-NFTs][quick-nft] (Quick-NFTs are special NFTs that is designed as part of this project which provides its holder a temporary access to the creator's private content. **Quick-NFTs are made possible by Arseeding & we will focus on Quick-NFTs for this hackathon ❤️**)
 - - -
-
-
 For this hackathon, our focus is on [Quick-NFTs][quick-nft] and how arseeding and web3infra helped in their implementation. Feel free to skip to [Quick-NFTs][quick-nft] section.
 
 ## Creator's perspective.
