@@ -38,7 +38,7 @@ class App {
       })
     );
     this.app.use(fileUpload());
-    this.app.use(cors({origin: ['http://localhost:3001', 'https:/ROOM-207.vercel.app'], credentials: true}));
+    this.app.use(cors({origin: ['http://localhost:3000', 'https:/dappstar.vercel.app'], credentials: true}));
   }
 
   private initializeControllers(controllers: readonly Controller[]) {

@@ -8,14 +8,22 @@ Ethereum · Arweave
 2. Demo: 
 3. How to interact with the live project: 
 
-## Livepeer: Best Design
-4. Figma : 
+## Livepeer: Best Design in future plan
+4. Figma : https://www.figma.com/proto/W3t858KABHT4rftiA27pYG/ROOM207?node-id=3%3A2&scaling=scale-down&page-id=0%3A1
+Landing Page : 
+1- ![Gameplay](https://raw.githubusercontent.com/samar19/pic-/master/Screen%20Shot%202023-01-12%20at%2011.39.12%20AM.png)
+2- ![Gameplay](https://raw.githubusercontent.com/samar19/pic-/master/Screen%20Shot%202023-01-12%20at%202.05.42%20PM.png)
+3- ![Gameplay](https://raw.githubusercontent.com/samar19/pic-/master/Screen%20Shot%202023-01-12%20at%202.09.15%20PM.png)
+4- ![Gameplay](https://raw.githubusercontent.com/samar19/pic-/master/Screen%20Shot%202023-01-12%20at%202.11.34%20PM.png)
 
 ##  presentation 
 5. presentation : https://www.canva.com/design/DAFXHUW99Js/hZAPU4rLP5Qg8zmeR_o8IQ/watch?utm_content=DAFXHUW99Js&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## github Repo
 6. github repo : https://github.com/samar19/room207_livpeer
+8. cloinbase : https://www.coinbase.com/home
+coinbase wallet : etheruem address : 0xFFe1A72e9787ff8B66bC5f989A43dE08d8Ac2A40
+
 
 ## project Description 
 
@@ -25,7 +33,6 @@ On the platform, creators can manage their content, view their revenue from NFT 
 
 Overall, Room207 aims to provide creators with a decentralized and secure platform for sharing their content, while also giving fans the option for temporary access through the use of Quick-NFTs.
 
-- - -
 # Problems with the current state of creator economy?
 ## Dependency on centralized system
 What if the service on which the creator hosted their content goes down? What if the service decides to ban that particular creator for whatever reason? The creator is helpless before such centralized systems!
